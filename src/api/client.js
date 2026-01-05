@@ -1,6 +1,9 @@
 let activeController = null;
 
-export async function apiFetch(url, options = {}) {
+const BASE_URL = "https://farminput-capstone-project.onrender.com/api/auth/signup";
+
+
+export async function apiFetch(endpoint, options = {}) {
   // Cancel previous request
   if (activeController) {
     activeController.abort();
@@ -8,12 +11,17 @@ export async function apiFetch(url, options = {}) {
 
   activeController = new AbortController();
 
+  const api = `${BASE_URL}/${endpoint}`;
+
+  const token = localStorage.getItem("token");
+
   try {
-    const response = await fetch(url, {
+    const response = await fetch(api, {
       ...options,
       signal: activeController.signal,
       headers: {
         "Content-Type": "application/json",
+        "Authorization": `Bearer ${token}`,
         ...options.headers,
       },
       credentials: "include", // cookies support
