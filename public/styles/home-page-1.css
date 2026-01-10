@@ -201,4 +201,24 @@ body {
   object-fit: cover;
   display: block;
 }
-        
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .image{
+    text-align: center;
+  }
+  
+  .ready-image {
+    text-align: center;
+    margin: 0 -40px -40px -40px;
+  }
+  
+  .ready-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
