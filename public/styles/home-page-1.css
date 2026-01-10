@@ -18,6 +18,7 @@ body {
   align-items: center;
   background-color: #FFFFFF;
   padding: 15px 50px;
+  position: relative;
 }
 
 .logo {
@@ -67,6 +68,81 @@ body {
 
 .signin-btn:hover {
   background-color: #45a049;
+}
+
+/* Mobile menu for navbar */
+
+.slide {
+  display: none;
+}
+
+.menu-checkbox {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2.2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+  padding: 0;
+  line-height: 1;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  max-width: 320px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -3px 0 15px rgba(0,0,0,0.25);
+  transition: right 0.4s ease;
+  z-index: 999;
+  padding: 80px 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 2.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+
+.mobile-menu a{
+  text-decoration: none;
+}
+
+.mobile-menu a:hover {
+  color: #45a049;
+}
+
+.mobile-menu a,
+.mobile-menu .signin-btn {
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 12px 0;
+  display: block;
+}
+
+.mobile-menu .signin-btn {
+  margin-top: 30px;
+  width: 100%;
+  padding: 14px;
 }
 
 /* Hero section styling */
@@ -204,6 +280,29 @@ body {
 
 /* Responsive adjustment */
 @media (max-width: 768px) {
+  /* for navbar */
+  .nav-links,
+  .signin-btn {
+    display: none;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+  
+  .slide {
+    display: block;
+  }
+  
+  .navbar {
+    padding: 15px 25px;
+  }
+  
+  #menu-toggle:checked ~ .mobile-menu {
+    right: 0;
+  }
+  
+  /* Hero-section */
   .hero-content {
     flex-direction: column;
     text-align: center;
@@ -212,6 +311,7 @@ body {
     text-align: center;
   }
   
+  /* Ready to shop section */
   .ready-image {
     text-align: center;
     margin: 0 -40px -40px -40px;
@@ -220,5 +320,12 @@ body {
   .ready-content {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+/* navbar */
+@media (min-width: 769px) {
+  .mobile-menu {
+    display: none;
   }
 }
