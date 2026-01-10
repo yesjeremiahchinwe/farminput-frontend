@@ -74,6 +74,8 @@ body {
 
 .slide {
   display: none;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .menu-checkbox {
@@ -176,11 +178,14 @@ body {
 .image {
   flex: 1;
   text-align: right;
+  width: 100%;
 }
 
 .image img {
-  max-width: 100%;
+  width: 100%;
+  /* max-width: 100%; */
   height: auto;
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -218,7 +223,7 @@ body {
 /*Ready to shop section styling*/
 .outer-container {
   background-color: white;
-  padding: 40px;
+  padding: 40px 1rem;
 }
 
 .ready-content {

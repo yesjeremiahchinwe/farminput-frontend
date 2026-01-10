@@ -109,11 +109,13 @@ body {
   margin-bottom: 0;
 }
 
-/* .image-content {
-  margin-bottom: -250px;
-} */
+.image-content {
+  width: 100%;
+  display: block;
+}
+
 .image-content img {
-  width: 90%;
+  width: 100%;
   height: 400px;
   margin-top: 20px;
   border-radius: 12px;
@@ -439,7 +441,6 @@ body {
   .image-content img {
     height: 220px;
     border-radius: 8px;
-    margin-right: 80px;
   }
 
   /* Vision & Mission Section */

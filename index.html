@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Farm Input</title>
     <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/home-page-1.css" />
     <!-- Roboto Variable Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,20 +15,76 @@
     />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="./index.html">Home</a>
-            <a href="./about-us.html">About Us</a>
-            <a href="./products.html">Products</a>
-            <a href="./learn-more.html">How it works</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <div class="logo-icon">
+          <img src="./assets/icons/Mask group.svg" alt="logo" />
+        </div>
+        <span>Farm input</span>
+      </div>
 
-    <h1>Home Page</h1>
+      <!-- Desktop Navigation  -->
+      <div class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./about-us.html">About</a>
+        <a href="./products.html">Products</a>
+        <a href="./learn-more.html">How it works</a>
+      </div>
+
+      <button class="signin-btn">Sign In</button>
+
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+
+      <label class="slide" for="menu-toggle">☰</label>
+
+      <!-- Slide-in menu for mobile navbar -->
+      <div class="mobile-menu">
+        <label for="menu-toggle" class="close-btn">×</label>
+
+        <a href="./index.html">Home</a>
+        <a href="./about-us.html">About</a>
+        <a href="./products.html">Products</a>
+        <a href="./learn-more.html">How it works</a>
+
+        <button class="signin-btn">Sign In</button>
+      </div>
+    </nav>
+
+    <!-- Hero section -->
+    <div class="hero-content">
+      <div class="text">
+        <h2>Your Complete Agricultural Input Management Solution</h2>
+        <p>
+          Track farm inputs, compare prices, and save money through bulk
+          purchasing with farm input. Join thousands of farmers optimizing their
+          agricultural spending.
+        </p>
+        <button class="getstarted-btn">Get Started →</button>
+        <button class="learnmore-btn">Learn More</button>
+      </div>
+
+      <div class="image">
+        <img src="./assets/images/Frame 80.png" alt="grass field" />
+      </div>
+    </div>
+
+    <!-- Ready to Shop Section -->
+    <div class="outer-container">
+      <div class="ready-content">
+        <div class="ready-text">
+          <h2>Ready to Shop?</h2>
+          <p>
+            Access quality farm inputs at competitive prices. Download our app
+            and start saving today.
+          </p>
+          <button class="ready-btn">Shop Now →</button>
+        </div>
+        <div class="ready-image">
+          <img src="./assets/images/unsplash_HOOKgN_zIY8.png" alt="farming" />
+        </div>
+      </div>
+    </div>
 
     <div id="toast"></div>
 
