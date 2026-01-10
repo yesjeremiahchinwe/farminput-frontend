@@ -69,5 +69,77 @@ body {
   background-color: #45a049;
 }
 
+/* Hero section styling */
+.hero-content {
+  background-color: #E5FDED;
+  display: flex;
+  align-items: center;
+  padding: 60px 50px;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.text {
+  flex: 1;
+}
+
+.text h2{
+  font-size: 2.9rem;
+  line-height: 72px;
+  font-weight: 400;
+}
+
+.text p{
+  margin: 20px 0;
+  font-size: 1.1rem;
+  letter-spacing: -1%;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.image {
+  flex: 1;
+  text-align: right;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.getstarted-btn {
+  background-color: #00A73E;
+  color: white;
+  border: 1px;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  margin-right: 15px;
+  transition: background-color 0.3s;
+}
+
+.getstarted-btn:hover {
+  background-color: #008F32;
+}
+
+.learnmore-btn {
+  background-color: white;
+  color: #00A73E;
+  border: 1px solid #00A73E;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  transition: background-color 0.3s;
+}
+
+.learnmore-btn:hover {
+  background-color: #f0f0f0;
+}
+
+
+
 
         
