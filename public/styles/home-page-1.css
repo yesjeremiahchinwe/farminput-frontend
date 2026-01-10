@@ -139,7 +139,66 @@ body {
   background-color: #f0f0f0;
 }
 
+/*Ready to shop section styling*/
+.outer-container {
+  background-color: white;
+  padding: 40px;
+}
 
+.ready-content {
+  background-color: #00A73E;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  border-radius: 12px;
+  gap: 70px;
+}
 
+.ready-text {
+  flex: 1;
+  color: white;
+}
 
+.ready-text h2 {
+  font-size: 56px;
+  margin-bottom: 16px;
+  letter-spacing: -1%;
+  font-weight: 400;
+}
+
+.ready-text p{
+  font-size: 19px;
+  margin-bottom: 25px;
+  letter-spacing: -1%;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.ready-btn {
+  background-color: white;
+  color: #00A73E;
+  border: none;
+  padding: 14px 28px;
+  font-size: 0.7rem;
+  font-weight: 400;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.ready-btn:hover {
+  opacity: 0.9;
+}
+
+.ready-image {
+  flex: 1;
+  margin: -40px;
+}
+
+.ready-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
         
