@@ -1,0 +1,577 @@
+/* Reset and Base Styles */
+
+:root {
+  --primary-color: #00a73e;
+  --light-green: rgba(217, 233, 217, 0.4);
+  --white: #ffffff;
+  --light-white: rgba(255, 255, 255, 0.798);
+  --light-gray: #504c4c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0px 60px;
+}
+
+/* Header Section */
+.about-header {
+  /* background: linear-gradient(135deg, #22c55e 100%, #16a34a 0%); */
+  background-color: var(--primary-color);
+  color: white;
+  padding: 30px 0 40px;
+  height: 12rem;
+}
+
+.header-nav {
+  margin-bottom: 20px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.back-link:hover {
+  opacity: 0.8;
+}
+
+.arrow-icon {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header-content h1 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+
+.header-tagline {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.95;
+}
+
+/* Who We Are Section */
+.who-we-are {
+  padding: 50px 0px 100px;
+  background-color: white;
+  height: 500px;
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+/* .text-content {
+  margin-bottom: -180px;
+} */
+.text-content h2 {
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(58, 54, 54);
+  margin-bottom: 24px;
+}
+
+.text-content p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4a4a4a;
+  margin-bottom: 20px;
+}
+
+.text-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* .image-content {
+  margin-bottom: -250px;
+} */
+.image-content img {
+  width: 90%;
+  height: 400px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* Vision & Mission Section */
+.vision-mission {
+  background-color: var(--primary-color);
+  /* background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%); */
+  padding: 80px 0;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.mission-card,
+.vision-card {
+  background-color: white;
+  border-radius: 12px;
+  height: 300px;
+  max-width: 700px;
+  padding: 40px 32px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-card:hover,
+.vision-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card-icon {
+  margin-bottom: 24px;
+}
+
+.mission-svg,
+.vision-svg {
+  width: 30px;
+  /* filter: brightness(0) saturate(100%) invert(64%) sepia(98%) saturate(449%)
+    hue-rotate(85deg) brightness(100%) contrast(89%); */
+  filter: brightness(0) saturate(100%) invert(64%) sepia(98%) saturate(449%)
+    hue-rotate(85deg) brightness(50%) contrast(89%);
+}
+.icon-placeholder {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #91f086;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style for when you add your SVGs */
+.card-icon svg {
+  width: 50px;
+  height: 50px;
+}
+
+.mission-card h3,
+.vision-card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.mission-card p,
+.vision-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #4a4a4a;
+}
+
+/* Tablet Landscape and Medium Screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+    padding: 0px 50px;
+  }
+
+  /* Header Section */
+  .about-header {
+    height: auto;
+    padding: 25px 0 35px;
+  }
+
+  .header-content h1 {
+    font-size: 32px;
+  }
+
+  .header-tagline {
+    font-size: 15px;
+  }
+
+  /* Who We Are Section */
+  .who-we-are {
+    padding: 50px 0 70px;
+    height: auto;
+  }
+
+  .content-wrapper {
+    gap: 50px;
+  }
+
+  .text-content h2 {
+    font-size: 24px;
+  }
+
+  .text-content p {
+    font-size: 14px;
+  }
+
+  .image-content img {
+    width: 100%;
+    height: 350px;
+  }
+
+  /* Vision & Mission Section */
+  .vision-mission {
+    padding: 70px 0;
+  }
+
+  .cards-wrapper {
+    gap: 35px;
+  }
+
+  .mission-card,
+  .vision-card {
+    height: auto;
+    min-height: 280px;
+    padding: 35px 28px;
+  }
+
+  .mission-card h3,
+  .vision-card h3 {
+    font-size: 22px;
+  }
+
+  .mission-card p,
+  .vision-card p {
+    font-size: 13px;
+  }
+
+  .mission-svg,
+  .vision-svg {
+    width: 28px;
+  }
+
+  .icon-placeholder {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+    padding: 0px 40px;
+  }
+
+  .content-wrapper {
+    gap: 50px;
+  }
+
+  .cards-wrapper {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0px 30px;
+  }
+
+  /* Header Section */
+  .about-header {
+    height: auto;
+    padding: 20px 0 30px;
+  }
+
+  .header-content h1 {
+    font-size: 28px;
+  }
+
+  .header-tagline {
+    font-size: 14px;
+  }
+
+  /* Who We Are Section */
+  .who-we-are {
+    padding: 40px 0 60px;
+    height: auto;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .text-content h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .text-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .image-content {
+    order: -1;
+  }
+
+  .image-content img {
+    width: 100%;
+    height: 280px;
+    margin-top: 0;
+  }
+
+  /* Vision & Mission Section */
+  .vision-mission {
+    padding: 60px 0;
+  }
+
+  .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .mission-card,
+  .vision-card {
+    height: auto;
+    max-width: 100%;
+    padding: 30px 24px;
+  }
+
+  .mission-card h3,
+  .vision-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .mission-card p,
+  .vision-card p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .mission-svg,
+  .vision-svg {
+    width: 25px;
+  }
+
+  .icon-placeholder {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0px 20px;
+  }
+
+  /* Header Section */
+  .about-header {
+    padding: 16px 0 24px;
+  }
+
+  .header-nav {
+    margin-bottom: 16px;
+  }
+
+  .back-link {
+    font-size: 13px;
+    gap: 6px;
+  }
+
+  .arrow-icon {
+    font-size: 16px;
+  }
+
+  .header-content h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  .header-tagline {
+    font-size: 13px;
+  }
+
+  /* Who We Are Section */
+  .who-we-are {
+    padding: 30px 0 50px;
+  }
+
+  .content-wrapper {
+    gap: 24px;
+  }
+
+  .text-content h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .text-content p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 14px;
+  }
+
+  .image-content img {
+    height: 220px;
+    border-radius: 8px;
+    margin-right: 80px;
+  }
+
+  /* Vision & Mission Section */
+  .vision-mission {
+    padding: 40px 0;
+  }
+
+  .cards-wrapper {
+    gap: 20px;
+  }
+
+  .mission-card,
+  .vision-card {
+    padding: 24px 20px;
+    border-radius: 10px;
+  }
+
+  .card-icon {
+    margin-bottom: 20px;
+  }
+
+  .mission-card h3,
+  .vision-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .mission-card p,
+  .vision-card p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .mission-svg,
+  .vision-svg {
+    width: 22px;
+  }
+
+  .icon-placeholder {
+    width: 40px;
+    height: 40px;
+  }
+}
+/* Tablet Portrait (800x1280 specifically) */
+@media screen and (min-width: 768px) and (max-width: 900px) and (orientation: portrait) {
+  .container {
+    padding: 0px 40px;
+  }
+
+  /* Header Section */
+  .about-header {
+    height: auto;
+    padding: 24px 0 32px;
+  }
+
+  .header-content h1 {
+    font-size: 30px;
+  }
+
+  .header-tagline {
+    font-size: 15px;
+  }
+
+  /* Who We Are Section */
+  .who-we-are {
+    padding: 45px 0 65px;
+    height: auto;
+  }
+
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .image-content {
+    order: -1;
+  }
+
+  .text-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .text-content p {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .image-content img {
+    width: 100%;
+    height: 320px;
+    margin-top: 0;
+  }
+
+  /* Vision & Mission Section */
+  .vision-mission {
+    padding: 65px 0;
+  }
+
+  .cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .mission-card,
+  .vision-card {
+    height: auto;
+    max-width: 100%;
+    padding: 32px 26px;
+  }
+
+  .mission-card h3,
+  .vision-card h3 {
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+
+  .mission-card p,
+  .vision-card p {
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .mission-svg,
+  .vision-svg {
+    width: 28px;
+  }
+
+  .icon-placeholder {
+    width: 46px;
+    height: 46px;
+  }
+}
