@@ -1,0 +1,25 @@
+/* ------------ Second Section -------------- */
+.deliveries_container {
+    max-width: 450px;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.deliveries_container h2 {
+    font-weight: 400;
+    font-size: 48px;
+    padding-top: 3rem;
+    color: #000000;
+}
+
+.deliveries_container p {
+  font-size: 18px;
+  color: rgb(0, 0, 0, 0.42);
+  padding-top: 1rem;
+}
+
+.delivery_process_wrapper {
+    background-color: #D3F5D1;
+    padding: 2rem;
+    border-radius: 12px;
+}
