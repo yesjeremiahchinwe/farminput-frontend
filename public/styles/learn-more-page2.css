@@ -1,0 +1,287 @@
+
+.order{   
+    background-color:rgba(211, 245, 209, 0.35);
+    border-radius: 10px;
+    border: 20px;
+    padding: 40px 20px;
+}
+#header{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 2px;
+}
+#eff{
+    font-family: "Roboto", "sans-serif";
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 24px;
+    color: hwb(0 0% 100% / 43%);
+    margin-top: 2px;
+}
+.comorder img{
+    width: 66px;
+    height: 62px;
+}
+.suborder{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+#p1{
+    font-size: 20px;
+    color:rgba(0, 0, 0, 1);
+}
+#p2 {
+    font-size: 16px;
+    color: rgba(80, 76, 76, 0.7686);
+}
+.stayupdated{
+    background-color: rgba(207, 235, 248, 1);
+    border-radius: 22px;
+    padding: 10px 20px;
+}
+.updated{    
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    font-family: "Roboto";
+    font-style: "light";
+    font-weight: 300;
+     
+}
+
+
+#comorder{
+    flex: 1;
+   
+}
+.howdelwork{
+    max-width: 1248px;
+    height: 512px;
+    top: 1977px;
+    margin: auto;
+}
+#p3{
+    color: rgba(80, 76, 76, 0.7686);
+    font-size: 17px;
+    margin-top: 1px;
+}
+
+
+#question{
+    margin-left: auto;            
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -100px;
+    font-size: 24px;
+
+}
+
+.grid1{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1248px;
+  margin: auto;
+}
+.input img{
+    width: 70px;
+    cursor: pointer;
+    
+}
+.input #p4{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 2px;
+}
+.input #p5{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 21px;
+    color:  #504C4C;
+    font-style: "regular";
+    margin-top: 2px;
+}
+.input{
+    border: 1px solid;
+    box-shadow: 0px 4px 10px 0px #00000040;
+    box-shadow: -3px 0px 12px 0px #00000040;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px;
+    gap: 30px;
+}
+.signup-btn {
+  background-color: #FFFFFF;
+  color:  #00A73E;
+  border: none;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 170px;
+  height: 70px;
+}
+.footer{
+    border-width: 1px solid;
+    border-width:1440px;
+    height: 250px;
+    background-color:  #00A73E;  
+    margin-top: 50px;
+}
+.btn{
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  gap: 20px;                
+  padding: 20px;
+  align-items: flex-end;      
+  
+}
+.learnmore-btn {
+  background-color: #00A73E;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #FFFFFF;
+  width: 170px;
+  height: 70px;
+}
+.footer button{
+    align-items: center;
+}
+.footer #question1{
+    
+    margin-left: auto;            
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -100px;
+    font-size: 24px;
+}
+
+
+
+
+/* Tablet / Mobile: max width 768px */
+@media (max-width: 768px) {
+
+  /* Order Section */
+  .order {
+    padding: 20px 15px;          
+  }
+
+  #header {
+    font-size: 32px;             
+    margin-bottom: 10px;
+  }
+
+  #eff {
+    font-size: 20px;              
+  }
+ 
+  .suborder {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  #p1 {
+    font-size: 18px;
+  }
+
+  #p2 {
+    font-size: 14px;
+  }
+
+  
+  .grid1 {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .input {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .input #p4 {
+    font-size: 24px;
+  }
+
+  .input #p5 {
+    font-size: 16px;
+  }
+
+  .input img {
+    width: 50px;
+  }
+
+ 
+  .signup-btn, .learnmore-btn {
+    width: 140px;
+    height: 60px;
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  .footer {
+    height: auto;                 
+    padding: 30px 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  
+  .btn {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+ 
+  .footer #question1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  
+  .howdelwork {
+    height: auto;
+    max-width: 100%;
+  }
+
+}
+
