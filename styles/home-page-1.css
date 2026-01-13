@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  padding: 15px 50px;
+  padding: 15px 78px;
   position: relative;
 }
 
@@ -142,7 +142,7 @@
   background-color: #e5fded;
   display: flex;
   align-items: center;
-  padding: 60px 50px;
+  padding: 60px 69px;
   margin: 0 auto;
   gap: 50px;
 }
@@ -169,11 +169,11 @@
   flex: 1;
   text-align: right;
   width: 100%;
+  object-fit: cover;
 }
 
 .image img {
-  width: 100%;
-  /* max-width: 100%; */
+  width: 90%;
   height: auto;
   object-fit: cover;
   border-radius: 10px;
@@ -213,7 +213,7 @@
 /*Ready to shop section styling*/
 .outer-container {
   background-color: white;
-  padding: 40px 1rem;
+  padding: 40px 70px;
 }
 
 .ready-content {
@@ -221,7 +221,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px;
   border-radius: 12px;
   gap: 70px;
 }
@@ -229,6 +228,7 @@
 .ready-text {
   flex: 1;
   color: white;
+  padding: 40px;
 }
 
 .ready-text h2 {
@@ -263,18 +263,23 @@
 
 .ready-image {
   flex: 1;
-  margin: -40px;
 }
 
 .ready-image img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   display: block;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 /* Responsive adjustment */
 @media (max-width: 768px) {
+  .outer-container {
+  padding: 40px 1rem;
+}
+
   /* for navbar */
   .nav-links,
   .signin-btn {
@@ -320,12 +325,18 @@
   /* Ready to shop section */
   .ready-image {
     text-align: center;
-    margin: 0 -40px -40px -40px;
+    /* margin: 0 -40px -40px -40px; */
   }
 
   .ready-content {
     flex-direction: column;
     text-align: center;
+  }
+
+  .ready-image img {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
   }
 }
 
