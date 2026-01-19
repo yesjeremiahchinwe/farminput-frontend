@@ -143,6 +143,9 @@
   font-weight: 500;
   border-radius: 8px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 70px;
 }
@@ -171,10 +174,13 @@
   border-radius: 8px;
   cursor: pointer;
   border: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 70px;
 }
-.footer button {
+.footer a {
   align-items: center;
 }
 .footer #question1 {

@@ -211,7 +211,7 @@ footer {
 }
 
 .footer p {
-    padding: 1.4rem 0;
+    padding: 1.4rem 0 4rem;
 }
 
 .btn {
@@ -224,6 +224,18 @@ footer {
   background-color: var(--white);
   margin-top: 40px;
   cursor: pointer;
+}
+
+footer a {
+  padding: 1.75rem 1.8rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border: none;
+  color: var(--primary-color);
+  border-radius: 20px;
+  background-color: var(--white);
+  cursor: pointer;
+  margin-top: 4rem;
 }
 
 @media screen and (min-width: 460px) {
